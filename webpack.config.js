@@ -22,16 +22,8 @@ module.exports = {
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
       {
         test: /\.scss$/,
-        include: path.appSrc,
-        loaders: ["style-loader", "css-loader", "sass-loader"],
-        exclude: [
-          /\.html$/,
-          /\.(js|jsx)$/,
-          /\.css$/,
-          /\.json$/,
-          /\.svg$/,
-        ],
-},
+        loaders: ["style-loader", "css-loader", "sass-loader"]
+      },
     ]
   },
 
